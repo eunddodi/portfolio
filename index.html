@@ -27,17 +27,17 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar_logo">
+        <div class="navbar__logo">
             <img src="imgs/cat.png" width=20px>
             <a href="#">Eunddodi</a>
         </div>
-        <ul class="navbar_menu">
-            <li class="navbar_menu_item">Home</li>
-            <li class="navbar_menu_item">About</li>
-            <li class="navbar_menu_item">Skills</li>
-            <li class="navbar_menu_item">Work</li>
-            <li class="navbar_menu_item">Testimonials</li>
-            <li class="navbar_menu_item">Contact</li>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">Work</li>
+            <li class="navbar__menu__item">Testimonials</li>
+            <li class="navbar__menu__item">Contact</li>
         </ul>
         </div>
     </nav>
@@ -46,11 +46,11 @@
     <section id="Home">
         <img src="imgs/profile.jpg"
         alt="Eunddodi's profile photo"
-        class="home_avatar"
+        class="home__avatar"
         />
-        <h1 class="home_title">Hello, <br />I'm Dream Coder</h1>
-        <h2 class="home_description">A FrontEnd Engineer with design skills</h2>
-        <button class="home_contact">Contact me</button>
+        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
+        <h2 class="home__description">A FrontEnd Engineer with design skills</h2>
+        <button class="home__contact">Contact me</button>
 
     </section>
 
@@ -61,48 +61,48 @@
             Hi I'm eunddodi :)
         </p>
 
-        <div class="about_majors">
+        <div class="about__majors">
             <div class="major">
-                <div class="major_icon">
+                <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <h2 class="major_title">HTML&CSS</h2>
-                <p class="major_description">
+                <h2 class="major__title">HTML&CSS</h2>
+                <p class="major__description">
                     I can make responsive website
                 </p>
             </div>
 
             <div class="major">
-                <div class="major_icon">
+                <div class="major__icon">
                     <i class="fab fa-js"></i>
                 </div>
-                <h2 class="major_title">Javascript</h2>
-                <p class="major_description">
+                <h2 class="major__title">Javascript</h2>
+                <p class="major__description">
                     I can make moving website
                 </p>
             </div>
 
             <div class="major">
-                <div class="major_icon">
+                <div class="major__icon">
                     <i class="fab fa-react"></i>
                 </div>
-                <h2 class="major_title">React</h2>
-                <p class="major_description">
+                <h2 class="major__title">React</h2>
+                <p class="major__description">
                     I can make well-organized website
                 </p>
             </div> 
         </div>
-        <div class="about_schools">
+        <div class="about__schools">
             <div class="school">
-                <img src="imgs/school_logo.jpg" alt="Yonsei univ" class="school_logo">
-                <p class="school_name">Yonsei University</p>
-                <p class="school_period">2018-2022</p>
+                <img src="imgs/school_logo.jpg" alt="Yonsei univ" class="school__logo">
+                <p class="school__name">Yonsei University</p>
+                <p class="school__period">2018-2022</p>
             </div>
 
             <div class="school">
-                <img src="imgs/school_logo.jpg" alt="Yonsei univ" class="school_logo">
-                <p class="school_name">Yonsei University</p>
-                <p class="school_period">2018-2022</p>
+                <img src="imgs/school_logo.jpg" alt="Yonsei univ" class="school__logo">
+                <p class="school__name">Yonsei University</p>
+                <p class="school__period">2018-2022</p>
             </div>
             
         </div>
@@ -115,15 +115,15 @@
         <p>판교의 코딩 프린세스 이은지가 할 수 있는 것들</p>
 
         <div class="skillset">
-            <div class="skillset_left">
-                <h3 class="skillset_title">Skills</h3>
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>HTML</span>
                         <span>99%</span>
                     </div>
-                    <div class="skill_bar">
-                        <div class="skill_value"></div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
                     </div>
                 </div>
                 <div class="skill">
@@ -163,10 +163,10 @@
                     </div>
                 </div>
             </div>
-            <div class="skillset_right">
+            <div class="skillset__right">
                 <div class="tools">
-                    <h3 class="skillset_title">Tools</h3>
-                    <ul class="tools_list">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
                         <li><span>Visual Studio Code</span></li>
                         <li><span>Intellij</span></li>
                         <li><span>Photoshop</span></li>
@@ -176,8 +176,8 @@
                     </ul>
                 </div>
                 <div class="etc">
-                    <h3 class="skillset_title">Etc</h3>
-                    <ul class="etc_list">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
                         <li><span>Git</span></li>
                     </ul>
                 </div>
@@ -186,7 +186,72 @@
     </section>
 
     <!-- Work -->
-    <section id="work"></section>
+    <section id="work">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work_categories">
+            <button class="category__btn">
+                All<span class="category__count">0</span>
+            </button>
+            <button class="category__btn">
+                Webpages<span class="category__count">0</span>
+            </button>
+            <button class="category__btn">
+                Vue<span class="category__count">0</span>
+            </button>
+            <button class="category__btn">
+                React<span class="category__count">0</span>
+            </button>
+        </div>
+
+        <div class="work_projects">
+            <a 
+            href="https://github.com/eunddodi" 
+            class="project"
+            target="blank"
+            >
+            <img class="project_img" src="imgs/project1.png" alt="project1">
+            <div class="project_description">
+                <h3>Project1</h3>
+                <span>blabla</span>
+            </div>
+            </a>
+            <a 
+            href="https://github.com/eunddodi" 
+            class="project"
+            target="blank"
+            >
+            <img class="project_img" src="imgs/project2.png" alt="project2">
+            <div class="project_description">
+                <h3>Project2</h3>
+                <span>blabla</span>
+            </div>
+            </a>
+            <a 
+            href="https://github.com/eunddodi" 
+            class="project"
+            target="blank"
+            >
+            <img class="project_img" src="imgs/project3.png" alt="project3">
+            <div class="project_description">
+                <h3>Project3</h3>
+                <span>blabla</span>
+            </div>
+            </a>
+            <a 
+            href="https://github.com/eunddodi" 
+            class="project"
+            target="blank"
+            >
+            <img class="project_img" src="imgs/project4.png" alt="project4">
+            <div class="project_description">
+                <h3>Project4</h3>
+                <span>blabla</span>
+            </div>
+            </a>
+        </div>
+    </section>
+    
     <!-- Testimonials -->
     <section id="testimonials"></section>
     <!-- Contact -->
