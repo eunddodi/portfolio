@@ -394,6 +394,7 @@ p {
 .testimonial {
     display: flex;
     margin: 32px 0;
+    align-items: center;
 }
 
 .testimonial__avatar {
