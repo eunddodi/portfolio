@@ -17,6 +17,7 @@
     --color-yellow: #fff7d1;
     --color-orange: #fedc46;
     --color-black: #000000;
+    --color-gradient-background: linear-gradient(to bottom, #5a79e7, #598aed, #5e99f2, #68a9f5, #77b7f7, #81bef8, #8cc6f8, #98cdf9, #9ed0f9, #a4d2f8, #aad5f8, #b0d7f8);
     
     /* Font size */
     --font-large: 48px;
@@ -166,7 +167,7 @@ p {
     padding: 100px 40px 40px 40px;
     padding-top: 120px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #5a79e7, #598aed, #5e99f2, #68a9f5, #77b7f7, #81bef8, #8cc6f8, #98cdf9, #9ed0f9, #a4d2f8, #aad5f8, #b0d7f8);
+    background-image: var(--color-gradient-background);
 }
 .home__avatar {
     width: 250px;
@@ -447,7 +448,7 @@ p {
 /* Contact */
 
 #contact {
-    background-color: var(--color-vivid-blue);
+    background-image: var(--color-gradient-background);
 }
 
 .contact__title, 
