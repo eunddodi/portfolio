@@ -1,5 +1,7 @@
 'use strict';
 
+
+// Make Navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar'); 
 const navbarHeight = navbar.getBoundingClientRect().height;
 // query selector를 사용해서 가져온 navbar 엘리먼트 
@@ -10,3 +12,18 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark')
     }
 });
+
+// Handle scrolling when tapping on the navbar menu
+// 클릭이 되면 지정한 id의 section으로 이동
+
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (event) => {
+    const target = event.target;
+    const link = target.dataset.link;
+    if (link==null) {
+        return;
+    }
+    console.log(event.target.dataset.link);
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+})
