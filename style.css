@@ -168,7 +168,13 @@ p {
     padding-top: 120px;
     text-align: center;
     background-image: var(--color-gradient-background);
+    transition: all var(--animation-duration) ease-in;
 }
+
+#home.home--transparent {
+    opacity: 20%;
+}
+
 .home__avatar {
     width: 250px;
     height: 250px;
