@@ -13,6 +13,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
 // Handle scrolling when tapping on the navbar menu
 // 클릭이 되면 지정한 id의 section으로 이동
 
@@ -23,8 +24,16 @@ navbarMenu.addEventListener('click', (event) => {
     if (link==null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+    
+}) 
 
 // Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
